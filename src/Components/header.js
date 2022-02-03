@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.scss";
 import { Row, Col } from "antd";
+import { Link } from "react-router-dom";
 
 class Header extends React.Component {
   render() {
@@ -9,9 +10,11 @@ class Header extends React.Component {
         <Row justify="center" align="middle">
           <Col span={8}></Col>
           <Col span={8}>
-            <div>
-              <img src="https://www.asambeauty.com/static/media/headerSprite.2ed85dc6.svg#logo"></img>
-            </div>
+            <Link to="/">
+              <div>
+                <img src="https://www.asambeauty.com/static/media/headerSprite.2ed85dc6.svg#logo"></img>
+              </div>
+            </Link>
           </Col>
 
           <Col span={8}>
