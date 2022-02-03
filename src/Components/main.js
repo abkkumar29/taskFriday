@@ -1,10 +1,10 @@
 import React from "react";
 import productData from "./products";
-import { Row, Col, Card } from "antd";
+import { Row, Col, Card, Button, InputNumber } from "antd";
 import { Link } from "react-router-dom";
 
 class Main extends React.Component {
-  productMini(product) {
+  productMini = (product) => {
     const link = `/product/${product.id}`;
     return (
       <Link to={link} key={product.id}>
@@ -16,15 +16,25 @@ class Main extends React.Component {
           >
             <Card.Meta title={product.name} description={product.description} />
             <Card.Meta title={product.price} />
+            <br></br>
+            <div className="addCartOnHover" onClick={(e) => e.preventDefault()}>
+              <InputNumber min={1} max={10} defaultValue={1} />
+            </div>
+            <br></br>
+            <div className="addCartOnHover" onClick={(e) => e.preventDefault()}>
+              <Button id="buttonHome" className="buttonStyle">
+                Add to Cart
+              </Button>
+            </div>
           </Card>
         </Col>
       </Link>
     );
-  }
+  };
   render() {
     return (
-      <div>
-        <Row justify="space-around">{productData.map(this.productMini)}</Row>
+      <div className="productListBox">
+        <Row gutter={[32, 8]}>{productData.map(this.productMini)}</Row>
       </div>
     );
   }

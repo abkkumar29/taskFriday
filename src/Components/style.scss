@@ -4,31 +4,31 @@
   display: flex;
   flex-wrap: wrap;
 }
-.heading {
-  display: flex;
-  flex-wrap: nowrap;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-  align-content: space-between;
-}
-.heading-inner-div{
-  gap: 50px !important;
-  justify-content: flex-end;
-}
 .image-dimension {
   height: $height;
   width: $width;
 }
 .buttonStyle {
   background-color: $button-color !important;
-  border:  $button-color !important;
+  border: $button-color !important;
   border-radius: $border-radius !important;
-  font-family: $font-family  !important;
-  color:$color  !important;
+  font-family: $font-family !important;
+  color: $color !important;
   width: 300px;
 }
-.hrLine{
-  border :1px solid grey;
+#buttonHome {
+  width: 180px;
+}
+.addCartOnHover {
+  text-align: center;
+}
+.hrLine {
+  border: 1px solid grey;
   max-width: 65%;
+}
+.productListBox {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  justify-content: space-around;
 }

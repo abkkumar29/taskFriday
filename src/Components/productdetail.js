@@ -1,6 +1,6 @@
 import React from "react";
 import productData from "./products";
-import { Row, Card, Rate, Carousel, Button ,InputNumber  } from "antd";
+import { Row, Card, Rate, Carousel, Button, InputNumber } from "antd";
 import "./style.scss";
 import { DownloadOutlined } from "@ant-design/icons";
 const { Meta } = Card;
